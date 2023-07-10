@@ -20,10 +20,18 @@ A proxima etapa é o pré-processamento, onde é feito as alterações de variá
 
 # ✅ CONCLUSION
 
-Os Algortimos de machine learning..
+O primeiro modelo a ser criado é o modelo base, normalmente é escolhido um algoritmo que seja simples e fácil de interpretar. A Regressão Logística (Benchmark) é  uma ótima opção quando trabalhamos com regressão. O Bechmark é muito útil pelo fato de além de entregar a classe do modelo de classificação, ainda calcula a probabilidade.
+
+<img width="880" alt="image" src="https://github.com/lucashomuniz/Project-11/assets/123151332/22a845f8-90e7-4098-8f47-2888c85e8526">
 
 
+Random Forest
 
+KNN
+
+Decision Tree
+
+SVM
 
 
 
