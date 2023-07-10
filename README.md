@@ -1,54 +1,39 @@
 # ✅ PROJECT 11
 
-Tem aumentado de forma contínua o número de pacientes com doença hepática devido ao consumo excessivo de álcool, inalação de gases nocivos, ingestão de alimentos contaminados e uso de drogas e anabolizantes. Neste Projeto objetivo é desenvolver um modelo de Machine Learning capaz de prever se um paciente vai ou não desenvolver uma doença hepática com base em diversas características do paciente. Esse modelo pode ajudar médicos, hospitais ou governos a planejar melhor o orçamento de gastos de saúde ou mesmo criar políticas de prevenção. O principal objetivo é prever uma classe (sim ou não), para isso usaremos aprendizado supervisionado de classificação, criando diferentes versões do modelo com diferentes algoritmos, passando por todo o processo de Machine Learning de ponta a ponta.
+The number of patients with liver disease is constantly increasing due to excessive alcohol consumption, inhalation of harmful gases, ingestion of contaminated food and use of drugs and anabolic steroids. In this project, our goal is to develop a Machine Learning model capable of predicting whether or not a patient will develop liver disease, based on various individual characteristics. This model can be a valuable tool for doctors, hospitals or governments when planning their health budgets and implementing effective prevention policies. The desired result is the classification of the patient in one of the classes, yes or no. To achieve this, we will use supervised classification learning techniques, creating different versions of the model with different algorithms. We'll walk you through the entire end-to-end process, including model building, training, evaluation, and selection. Thus, you will deeply understand how this process works, starting from a business problem until the delivery of a trained model that makes accurate predictions. Throughout the project, we will address issues such as which techniques should be applied at each stage, what is the proper order to use these techniques, and which tools should be employed and at what time. Furthermore, we will discuss how to compare the different versions of the models baseed on five types of algoritms.
 
-O objetivo é passar por todo o processo de construção, treinamento, avaliação e seleção de modelos para classificação. Para que possa compreender muito bem como funciona o processe, começando a partir de um problema de negócio, chegando até a entrega de um modelo treinado fazendo previsões. Respondendo perguntas como: Quais são as técnicas que devem ser empregada ao longo do processo?, Qual a ordem de aplicaçào dessas técncias?, Quais ferramentas você deve usar e quando? Se utilizar mais de um algoritmo como posso comparar as versões de cada um deles? 
-
-Keywords: 
+Keywords: R Language, Data Analysis, Machine Learning, Classification Model, Supervised Learning, Logistic Regression, Random Forest, KNN, Decision Tree, SVM, Liver Diseases, Health Budget.
 
 # ✅ PROCESS
 
-Com base na definição do problema de negócio e olhando para o dataframe, é possível saber qual o algortimo ideal para desenvolver o mdoelo de machine learning? Na grande maioria das vezes a resposta é não. Com base nisso, o plano é começar com um processo de experimentação, na qual será testado alguns algoritmos com diferentes combinações de hiperparâmetros, criando diferentes versões dos modelos e depois comparar o que obteve a melhor performace. Antes de se começar o projeto, já se sabe quais são as técnicas ideias de pré-processamento? Na grande maioria das vezes a resposta é não. De forma semelhante, faremos o processo de experimentação. O trabalho do cientista de dados é com base no processo de experimentação escolher qual é o melhor algoritmo, a melhor técnica e a melhor estratégia. 
+Based on the business problem definition and dataframe analysis, it is often difficult to determine which algorithm is ideal for developing the machine learning model. Therefore, the plan is to start an experimentation process, testing several algorithms with different combinations of hyperparameters, thus creating different versions of the models, and later comparing which one had the best performance. Likewise, before starting the project, it is difficult to know what the ideal pre-processing techniques are. Therefore, we will also do an experimentation process in this sense. The data scientist's work is based on experimentation in order to choose the best algorithm, technique and strategy. Initially, the Exploratory Analysis is performed right at the beginning, after loading the data. In this phase, tasks such as data cleaning (removal of duplicates and missing values) and possible specific transformations are performed. The main focus is on understanding the dataframe, visualizing the types of numerical and categorical variables, as well as their distributions, and treating outliers based on boxplots, description tables and frequency counts. In Exploratory Analysis, it is important not to have duplicate rows or duplicate columns (variables), as this would introduce duplicate information and could bias the developed model. The goal is to obtain a generalizable model.
 
-A Análise Exploratória é feita logo no início, após o carregamento dos dados. Nessa fase é feita toda o processo de limpeza (valores duplicados e valores ausentes), bem como possiveis transformações pontuais. O principal foco é realizar o entendimento do dataframe, com foco na visualização dos tipos das variáveis númerias e categóricas, bem como na visualização das suas distribuições e principalmente o tratamento de outliers a partir do boxplot, tabela de describe e contagem de frequência. Na Análise Exploratória não se pode ter linhas duplicadas nem colunas (variáveis) duplicadas, pelo fato de que caso isso ocorra teriamos uma dupicidade, o que teoricamente iria fazer com que o modelo desenvolvido fosse tendecioso, pois estariamos reforçando uma informação. O objetivo é ter um modelo generalizável.
+![image](https://github.com/lucashomuniz/Project-11/assets/123151332/f32d3cb0-c6b8-4781-be61-6d9d580c6afe)
 
-A etapa seguinte é o processo de Engenharia de Atributos, na qual é desenvolvido um tipo de transformação mais profunda (caso necessário) bem como uma possível criação e alteração das variáveis. Uma opção dentre dess fase é fazer o Feature Selection, com o intuito de obter as melhores variáveis para seguir com o processo de Machine Learning. Por fim, uma das técnicas mais importantes nessa fase é a criacão da Tabela de Correlação, na qual vai ser possível identificar possíveis níveis (positivo ou negativo) de relacionamento entre as variáveis, pricipalmente analisar possíveis indícios de multicolinearidade entre variáveis.
+The next step is Attribute Engineering, in which deeper transformations are performed, if necessary, and variables can be created or modified. One option at this stage is the Feature Selection, to select the best variables for the Machine Learning process. In addition, an important technique at this stage is the creation of the Correlation Table, which allows identifying possible relationship levels (positive or negative) between the variables, especially analyzing evidence of multicollinearity. The next step is preprocessing, where changes are made to variables that are still in text format to convert them to numbers. In addition, the entire Machine Learning model is organized, including the choice of the main algorithm, label encoding, normalization, standardization and data scaling. A widely used technique in this step is to divide the dataframe into training and testing sets. This is important because the Machine Learning model is trained on the training data and then evaluated on the test data. Once the model is trained, it is not appropriate to present the same data used in training, as the model already knows them. To evaluate the performance of the model, it is necessary to use new data, whose results are already known.
 
-Sequencialmente, a etapa de Análise Estatística é baseada no teorema do limite central, desenvolvendo teste de hipóteses entre variáveis, teste de shapiro-wilker, teste-t, teste-f, teste anova e regressão linear.
+![image](https://github.com/lucashomuniz/Project-11/assets/123151332/2e468d48-0c6b-461f-89aa-3a449d451928)
 
-A proxima etapa é o pré-processamento, onde é feito as alterações de variáveis que tenham ainda texto para número, bem como é feito a organização de todo o modelo de machine learning, escolha do algoritmo principal, label enconding, normalização, padronizaçào e scaling. Uma outra técnica bastante utilizada durante essa etapa é de dividr os dados do dataframe em dados de treino e dados de teste. Isso é importante pelo fato de que o modelo de machine learning é treinado (criado) com os dados de treino e em seguida é testadado (avaliado) com os dados de teste. Uma vez que o modelo esteja treinado, eu não posso apresentar a ele os mesmos dados utilizados em treinamento, porque ele já conhece esses dados. Para avaliar a performace do modelo, eu tenho que utilizar novos dados que eu obviamente já conheco o resultado
 
 # ✅ CONCLUSION
 
-O primeiro modelo a ser criado é o modelo base, normalmente é escolhido um algoritmo que seja simples e fácil de interpretar. A Regressão Logística (Benchmark) é  uma ótima opção quando trabalhamos com regressão. O Bechmark é muito útil pelo fato de além de entregar a classe do modelo de classificação, ainda calcula a probabilidade.
+There are several Machine Learning algorithms that can be applied to different problems. Let's explore some characteristics of the following algorithms: Logistic Regression, Random Forest, KNN, Decision Tree and SVM.
 
-<img width="613" alt="image" src="https://github.com/lucashomuniz/Project-11/assets/123151332/d30b0939-b1a8-460f-8d8a-abe09277e610">
+Logistic Regression is a simple and fast algorithm, especially suited for binary classification problems. It provides probabilistic interpretation of predictions and allows evaluating the influence of each variable. However, Logistic Regression may have limited performance in problems with complex decision boundaries and when classes are unbalanced.
 
+Random Forest is a powerful algorithm consisting of a set of decision trees. It is robust against overfitting, handles unbalanced data well, and is able to identify the most important variables. While effective in many cases, training a large number of trees can be computationally expensive and interpreting the results can be more challenging.
 
-Random Forest
+KNN (K-Nearest Neighbors) is a non-parametric algorithm that makes no assumptions about the distribution of the data. It is simple to understand and can be effective in problems with complex decision boundaries. However, its performance can be negatively affected by datasets with many features and the prediction time can be longer due to the search for nearest neighbors.
 
-KNN
+Decision Tree is an algorithm that is easy to interpret and visualize, allowing the identification of the most relevant characteristics. It can handle categorical and numeric variables and is computationally efficient. However, decision trees can be prone to overfitting and creating an optimal tree can be challenging.
 
-Decision Tree
+SVM (Support Vector Machines) is an effective algorithm in problems with complex decision boundaries and high dimensionality. It can be used in classification and regression problems, being less susceptible to overfitting. However, the proper choice of kernel and hyperparameters can be crucial and the interpretation of the results can be more difficult than with other algorithms.
 
-SVM
+Each of these algorithms has specific advantages and disadvantages. The choice of the most suitable algorithm will depend on the context of the problem, the characteristics of the data and the objectives of the project. It is important to consider these aspects and perform experiments to evaluate the performance of each algorithm before making a final decision.
 
+![image](https://github.com/lucashomuniz/Project-11/assets/123151332/dbccb0a6-d952-4d11-a721-509eb49889db)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+After comparing the five algorithms, it was found that the Random Forest had the best performance, using the AUC Score criterion. However, there are optimization possibilities considering other criteria, such as the inclusion of more relevant variables, exploration of different hyperparameters, increase in training time and modification of data pre-processing. Machine Learning is a continuous cycle, where it is possible to return to the starting point and start a new optimization cycle. With the best trained model, it is possible to perform predictions for several patients simultaneously, loading a .csv spreadsheet containing their data. After standardization, the results can be saved in another spreadsheet and sent to the business area of the company that requested the analysis.
 
 # ✅ DATA SOURCES
 
