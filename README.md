@@ -22,7 +22,7 @@ A proxima etapa é o pré-processamento, onde é feito as alterações de variá
 
 O primeiro modelo a ser criado é o modelo base, normalmente é escolhido um algoritmo que seja simples e fácil de interpretar. A Regressão Logística (Benchmark) é  uma ótima opção quando trabalhamos com regressão. O Bechmark é muito útil pelo fato de além de entregar a classe do modelo de classificação, ainda calcula a probabilidade.
 
-<img width="880" alt="image" src="https://github.com/lucashomuniz/Project-11/assets/123151332/22a845f8-90e7-4098-8f47-2888c85e8526">
+<img width="613" alt="image" src="https://github.com/lucashomuniz/Project-11/assets/123151332/d30b0939-b1a8-460f-8d8a-abe09277e610">
 
 
 Random Forest
