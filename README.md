@@ -42,7 +42,7 @@ Após identificar a necessidade de transformação dos dados, conduzimos também
 
 Cada modelo foi cuidadosamente avaliado utilizando métricas importantes como o **valor-p**, essencial para determinar a significância das variáveis, e o **coeficiente R-Squared (R²)**, que indica o quanto cada modelo explica a variabilidade da taxa de ocupação dos imóveis. Durante toda a construção dos modelos, avaliamos rigorosamente as suposições fundamentais da regressão linear múltipla, que incluem: **Linearidade**, **Independência dos erros**, **Homocedasticidade**, **Normalidade dos erros** e **Ausência de multicolinearidade**.
 
-![Screenshot 2025-03-24 at 20 48 18](https://github.com/user-attachments/assets/5d7cdf39-d859-4175-9296-9ebbbd044528)
+![212121](https://github.com/user-attachments/assets/c68c8608-b7df-48e8-a072-52990ae461cc)
 
 Ao final, o quinto modelo, otimizado após todos esses ajustes, apresentou o melhor desempenho estatístico, permitindo identificar claramente os fatores que influenciam diretamente na taxa de ocupação dos imóveis.
 
