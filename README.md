@@ -38,7 +38,7 @@ Após identificar a necessidade de transformação dos dados, conduzimos também
 
 > **Modelo 5 (Dados sem variáveis de baixa significância - otimização final)**: Uma otimização ainda mais rigorosa foi feita, reduzindo o modelo apenas às variáveis mais relevantes estatisticamente.
 
-![Screenshot 2025-03-24 at 20 45 07](https://github.com/user-attachments/assets/15974dbb-1bf4-421e-b788-af7236f88cd6)
+![Screenshot 2025-03-24 at 20 48 18](https://github.com/user-attachments/assets/85b9e3c2-961d-4a44-91eb-7df31de13a2e)
 
 Cada modelo foi cuidadosamente avaliado utilizando métricas importantes como o **valor-p**, essencial para determinar a significância das variáveis, e o **coeficiente R-Squared (R²)**, que indica o quanto cada modelo explica a variabilidade da taxa de ocupação dos imóveis. Durante toda a construção dos modelos, avaliamos rigorosamente as suposições fundamentais da regressão linear múltipla, que incluem: **Linearidade**, **Independência dos erros**, **Homocedasticidade**, **Normalidade dos erros** e **Ausência de multicolinearidade**.
 
