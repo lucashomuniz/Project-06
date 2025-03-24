@@ -16,39 +16,36 @@ We began the development with a detailed **Exploratory Data Analysis (EDA)** to 
 
 In the next step, we performed a **Bivariate Analysis** to investigate the relationship between the dependent variable and each independent variable through a **correlation table**. We used the **Pearson correlation coefficient** to quantify the strength of linear relationships, identifying variables with greater predictive potential, such as the **average number of rooms per residence**, **crime rate**, and **distance to the city center**. Based on these results, we assessed the presence of **multicollinearity** among the independent variables using the **Variance Inflation Factor (VIF)**. This analysis allowed us to select only the most relevant and statistically reliable variables for the subsequent models.
 
-![imagem1](https://github.com/user-attachments/assets/774015d8-21f0-48ad-92a1-15054f1f4ca6)
-
 ![imagem2](https://github.com/user-attachments/assets/29952055-944f-4c7d-826e-350faebc9b23)
 
-Após identificar a necessidade de transformação dos dados, conduzimos também uma **remoção cuidadosa de outliers** através de análises gráficas e técnicas estatísticas, incluindo o teste de normalidade (**Shapiro-Wilk**) e avaliação da assimetria (**skewness**) das variáveis. Esta etapa garantiu que as análises subsequentes fossem realizadas sobre dados mais homogêneos e estatisticamente robustos. Com a base devidamente tratada, procedemos à construção dos **modelos de regressão linear múltipla**, sendo desenvolvidos cinco modelos distintos, cada um incorporando melhorias em relação ao anterior:
+After identifying the need for data transformation, we also performed a **careful removal of outliers** using graphical analysis and statistical techniques, including the **Shapiro-Wilk normality test** and the evaluation of **skewness** for each variable. This step ensured that the following analyses would be conducted on more homogeneous and statistically robust data. With the dataset properly treated, we proceeded to build **multiple linear regression models**, developing five distinct versions, each incorporating improvements over the previous one:
 
-> **Modelo 1 (Dados Brutos)**: Serviu como modelo inicial para entender o comportamento geral dos dados sem ajustes adicionais.
+> **Model 1 (Raw Data)**: Served as the baseline model to understand the overall behavior of the data without adjustments.
 
-> **Modelo 2 (Dados Padronizados)**: Incorporou técnicas de padronização dos dados para melhorar a interpretação e comparabilidade dos coeficientes.
+> **Model 2 (Standardized Data)**: Included data standardization techniques to improve the interpretation and comparability of coefficients.
 
-> **Modelo 3 (Dados sem Multicolinearidade)**: Variáveis com alto VIF foram excluídas para mitigar os efeitos negativos da multicolinearidade.
+> **Model 3 (Without Multicollinearity)**: Variables with high VIF were removed to mitigate the negative effects of multicollinearity.
 
-> **Modelo 4 (Dados sem variáveis de baixa significância - primeira otimização)**: Variáveis com valores-p elevados (baixa significância estatística) foram excluídas.
+> **Model 4 (Excluding low-significance variables – first optimization)**: Variables with high p-values (low statistical significance) were excluded.
 
-> **Modelo 5 (Dados sem variáveis de baixa significância - otimização final)**: Uma otimização ainda mais rigorosa foi feita, reduzindo o modelo apenas às variáveis mais relevantes estatisticamente.
+> **Model 5 (Final optimization – only statistically relevant variables)**: A more rigorous selection process was applied, retaining only the most statistically significant variables.
 
 ![212121](https://github.com/user-attachments/assets/c68c8608-b7df-48e8-a072-52990ae461cc)
 
-Cada modelo foi cuidadosamente avaliado utilizando métricas importantes como o **valor-p**, essencial para determinar a significância das variáveis, e o **coeficiente R-Squared (R²)**, que indica o quanto cada modelo explica a variabilidade da taxa de ocupação dos imóveis. Durante toda a construção dos modelos, avaliamos rigorosamente as suposições fundamentais da regressão linear múltipla, que incluem: **Linearidade**, **Independência dos erros**, **Homocedasticidade**, **Normalidade dos erros** e **Ausência de multicolinearidade**.
+Each model was carefully evaluated using key metrics such as the **p-value**, essential for determining the significance of the variables, and the **R-Squared (R²) coefficient**, which indicates how much of the variability in housing occupancy the model is able to explain. Throughout the modeling process, we rigorously assessed the fundamental assumptions of multiple linear regression, including: **Linearity**, **Independence of errors**, **Homoscedasticity**, **Normality of residuals**, and **Absence of multicollinearity**.
 
 ![Screenshot 2025-03-24 at 20 48 18](https://github.com/user-attachments/assets/85b9e3c2-961d-4a44-91eb-7df31de13a2e)
 
-Ao final, o quinto modelo, otimizado após todos esses ajustes, apresentou o melhor desempenho estatístico, permitindo identificar claramente os fatores que influenciam diretamente na taxa de ocupação dos imóveis.
+In the end, the fifth model, optimized after all adjustments, showed the best statistical performance, clearly identifying the factors that directly influence housing occupancy rates.
 
 # ✅ CONCLUSION
 
-Neste projeto, constatamos que a multicolinearidade é um problema grave, pois pode comprometer significativamente a qualidade e confiabilidade dos modelos estatísticos, bem como tornar o modelo tendencioso. Para mitigar esse risco, utilizamos o **Fator de Inflação da Variância (VIF)**, identificando e removendo variáveis altamente correlacionadas entre si.
+In this project, we found that multicollinearity is a serious issue, as it can significantly compromise the quality and reliability of statistical models and introduce bias. To mitigate this risk, we applied the **Variance Inflation Factor (VIF)** to identify and remove highly correlated variables.
 
-Após rigorosas análises estatísticas—como testes de Pearson, avaliação de valores-p e regressões lineares múltiplas—identificamos claramente os fatores mais relevantes para a taxa de ocupação dos imóveis: **número médio de quartos por residência**, **taxa de criminalidade**, **presença de rio no bairro**, **taxa de poluição**, **distância do centro da cidade**, **taxa de professores** e **taxa de desabrigados**.
+Through rigorous statistical analyses—including Pearson correlation, p-value evaluation, and multiple linear regressions—we clearly identified the most relevant factors influencing housing occupancy rates: **average number of rooms per residence**, **crime rate**, **presence of a river in the neighborhood**, **pollution rate**, **distance to the city center**, **teacher rate**, and **homelessness rate**.
 
-Essas variáveis são determinantes para a ocupação imobiliária e podem ser utilizadas pela prefeitura na criação de políticas públicas de infraestrutura e segurança, bem como por investidores privados em decisões estratégicas de localização.
+These variables are key determinants of housing occupancy and can support public decision-making in infrastructure and security planning, as well as guide private investors in strategic location assessments.
 
-Por fim, com base nas variáveis mais relevantes identificadas, foi desenvolvido um dashboard interativo no Power BI, utilizando o PowerQuery para tratamento eficiente dos dados e a linguagem DAX para criação de métricas claras e objetivas, proporcionando ferramentas analíticas sólidas para tomada de decisões estratégicas.
+Finally, based on the most relevant variables, we developed an interactive dashboard in Power BI, using PowerQuery for efficient data processing and DAX for building clear and objective metrics—delivering a robust analytical tool for strategic decision-making.
 
 **Dashboard**:
-
