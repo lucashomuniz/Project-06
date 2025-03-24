@@ -38,13 +38,23 @@ Após identificar a necessidade de transformação dos dados, conduzimos também
 
 > **Modelo 5 (Dados sem variáveis de baixa significância - otimização final)**: Uma otimização ainda mais rigorosa foi feita, reduzindo o modelo apenas às variáveis mais relevantes estatisticamente.
 
+![Screenshot 2025-03-24 at 20 45 07](https://github.com/user-attachments/assets/15974dbb-1bf4-421e-b788-af7236f88cd6)
+
 Cada modelo foi cuidadosamente avaliado utilizando métricas importantes como o **valor-p**, essencial para determinar a significância das variáveis, e o **coeficiente R-Squared (R²)**, que indica o quanto cada modelo explica a variabilidade da taxa de ocupação dos imóveis. Durante toda a construção dos modelos, avaliamos rigorosamente as suposições fundamentais da regressão linear múltipla, que incluem: **Linearidade**, **Independência dos erros**, **Homocedasticidade**, **Normalidade dos erros** e **Ausência de multicolinearidade**.
+
+![Screenshot 2025-03-24 at 20 48 18](https://github.com/user-attachments/assets/5d7cdf39-d859-4175-9296-9ebbbd044528)
 
 Ao final, o quinto modelo, otimizado após todos esses ajustes, apresentou o melhor desempenho estatístico, permitindo identificar claramente os fatores que influenciam diretamente na taxa de ocupação dos imóveis.
 
 # ✅ CONCLUSION
 
-Multicolinearidade tem que ser revolvido. Multicolinearidade é um problema em regressão. Onde basicamente se está duplicando uma informação. Por exemplo, duas variáveis são altamente colineares, então basicamente aquela informação está duplicada/reforçada. Isso como consequência vai deixar o modelo tendêncioso.
+Neste projeto, constatamos que a multicolinearidade é um problema grave, pois pode comprometer significativamente a qualidade e confiabilidade dos modelos estatísticos, bem como tornar o modelo tendencioso. Para mitigar esse risco, utilizamos o **Fator de Inflação da Variância (VIF)**, identificando e removendo variáveis altamente correlacionadas entre si.
+
+Após rigorosas análises estatísticas—como testes de Pearson, avaliação de valores-p e regressões lineares múltiplas—identificamos claramente os fatores mais relevantes para a taxa de ocupação dos imóveis: **número médio de quartos por residência**, **taxa de criminalidade**, **presença de rio no bairro**, **taxa de poluição**, **distância do centro da cidade**, **taxa de professores** e **taxa de desabrigados**.
+
+Essas variáveis são determinantes para a ocupação imobiliária e podem ser utilizadas pela prefeitura na criação de políticas públicas de infraestrutura e segurança, bem como por investidores privados em decisões estratégicas de localização.
+
+Por fim, com base nas variáveis mais relevantes identificadas, foi desenvolvido um dashboard interativo no Power BI, utilizando o PowerQuery para tratamento eficiente dos dados e a linguagem DAX para criação de métricas claras e objetivas, proporcionando ferramentas analíticas sólidas para tomada de decisões estratégicas.
 
 **Dashboard**:
 
