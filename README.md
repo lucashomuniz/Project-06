@@ -26,7 +26,7 @@ After identifying the need for data transformation, we also performed a **carefu
 
 > **Model 3 (Without Multicollinearity)**: Variables with high VIF were removed to mitigate the negative effects of multicollinearity.
 
-> **Model 4 (Excluding low-significance variables – first optimization)**: Variables with high p-values (low statistical significance) were excluded.
+> **Model 4 (Excluding low-significance variables – first optimization)**: Variables with high p-values, low statistical significance, were excluded.
 
 > **Model 5 (Final optimization – only statistically relevant variables)**: A more rigorous selection process was applied, retaining only the most statistically significant variables.
 
