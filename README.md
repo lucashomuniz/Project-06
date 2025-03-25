@@ -44,4 +44,6 @@ Through rigorous statistical analyses including **Pearson Correlation**, **p-val
 
 These variables are key determinants of housing occupancy and can support public decision-making in infrastructure and security planning, as well as guide private investors in strategic location assessments. Finally, based on the most relevant variables, we developed an interactive dashboard in Power BI, delivering a robust analytical tool for strategic decision-making.
 
-**Dashboard**:
+![Screen Recording 2025-03-25 at 20 56 07](https://github.com/user-attachments/assets/3c2bbaa4-9ab5-45b4-82cc-ae8fca4ac7e3)
+
+**Dashboard**: https://app.powerbi.com/view?r=eyJrIjoiZTRmZDVmNjItYzQwYi00YjYxLWE0OGMtMTY3ZTA5YzJhMjdlIiwidCI6ImQ2OWE3NzgzLWU5MzctNDIzMi1iYTg1LTIwOTg0MDgzODJjOCJ9
