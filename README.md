@@ -18,7 +18,7 @@ In the next step, we performed a **Bivariate Analysis** to investigate the relat
 
 ![imagem2](https://github.com/user-attachments/assets/29952055-944f-4c7d-826e-350faebc9b23)
 
-After identifying the need for data transformation, we also performed a **careful removal of outliers** using graphical analysis and statistical techniques, including the **Shapiro-Wilk normality test** and the evaluation of **skewness** for each variable. This step ensured that the following analyses would be conducted on more homogeneous and statistically robust data. With the dataset properly treated, we proceeded to build **multiple linear regression models**, developing five distinct versions, each incorporating improvements over the previous one:
+After identifying the need for data transformation, we also performed a **careful removal of outliers** using graphical analysis and statistical techniques, including the **Shapiro-Wilk Normality Test** and the **evaluation of skewness** for each variable. This step ensured that the following analyses would be conducted on more homogeneous and statistically robust data. With the dataset properly treated, we proceeded to build **Multiple Linear Regression Models**, developing five distinct versions, each incorporating improvements over the previous one:
 
 > **Model 1 (Raw Data)**: Served as the baseline model to understand the overall behavior of the data without adjustments.
 
