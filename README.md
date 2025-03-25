@@ -34,7 +34,7 @@ After identifying the need for data transformation, we also performed a **carefu
 
 Each model was carefully evaluated using key metrics such as the **p-value**, essential for determining the significance of the variables, and the **R-Squared (R²) coefficient**, which indicates how much of the variability in housing occupancy the model is able to explain. Throughout the modeling process, we rigorously assessed the fundamental assumptions of multiple linear regression, including: **Linearity**, **Independence of errors**, **Homoscedasticity**, **Normality of residuals**, and **Absence of multicollinearity**.
 
-![Screenshot 2025-03-24 at 20 48 18](https://github.com/user-attachments/assets/85b9e3c2-961d-4a44-91eb-7df31de13a2e)
+![download](https://github.com/user-attachments/assets/e68d3a61-c960-4a82-8f52-dbc383b149be)
 
 In the end, the fifth model, optimized after all adjustments, showed the best statistical performance, clearly identifying the factors that directly influence housing occupancy rates.
 
