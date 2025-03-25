@@ -1,0 +1,40 @@
+
+PROJECT 06
+
+Interpretando os Elementos da Modelagem Estatística
+
+O relatório de regressão OLS fornece uma variedade de estatísticas e métricas para avaliar a qualidade e a significância do modelo. Aqui estão os elementos-chave do resultado do modelo:
+
+1. Dep. Variable (Variável Dependente): Indica que a variável que o modelo tenta prever é o logaritmo da taxa de ocupação.
+
+2. R-squared (R-quadrado): Indica a variação na variável dependente pode ser explicada pelas variáveis independentes incluídas no modelo. É uma medida de quão bem as variáveis independentes conseguem explicar a variável dependente.
+
+3. Adj. R-squared (R-quadrado ajustado): Ajusta o R-quadrado considerando o número de variáveis no modelo e o número de observações, proporcionando uma medida mais precisa para modelos com muitas variáveis.
+
+4. F-statistic (Estatística F): É um teste que avalia se há uma relação estatisticamente significativa entre a variável dependente e as variáveis independentes em conjunto.
+
+5.Prob (F-statistic): É a probabilidade de observar tal valor de estatística F se nenhuma das variáveis independentes tivesse efeito sobre a variável dependente. Um valor muito baixo indica forte evidência contra a hipótese nula (que as variáveis não têm efeito).
+
+6. Log-Likelihood (Log de Verosimilhança): É uma medida da probabilidade de observar os dados, de acordo com os parâmetros estimados; valores maiores indicam melhor ajuste.
+
+7. AIC/BIC: São critérios de informação que penalizam a complexidade do modelo (número de parâmetros) e favorecem o ajuste do modelo. Ambos servem para comparar modelos; modelos com valores menores são preferidos.
+
+8. Df Residuals/Model: São os graus de liberdade dos resíduos (número de observações menos o número de parâmetros); Df Model indica o número de variáveis independentes.
+
+9. Covariance Type: nonrobust indica que o tipo de cálculo da covariância não foi robusto a certas suposições estatísticas, o que pode afetar a precisão das estimativas de erro padrão.
+
+10. Coeficientes (coef): Representam o impacto estimado de cada variável independente na variável dependente.
+
+11. std err: Erro padrão das estimativas dos coeficientes, que ajuda a determinar a precisão das estimativas.
+
+12. t e P>|t|: Estatísticas t e seus valores-p correspondentes testam a hipótese nula de que cada coeficiente é igual a zero. Valores menores de P>It| indicam que é improvável observar tais dados se a hipótese nula fosse verdadeira.
+
+13. [0.025 0.975]: Intervalos de confiança de 95% para os coeficientes, mostrando a faixa dentro da qual os coeficientes verdadeiros provavelmente caem com 95% de confiança.
+
+14. Durbin-Watson: O teste de Durbin-Watson é usado para detectar a presença de autocorrelação nos resíduos de uma análise de regressão. Ele varia de 0 a 4. Um valor de 2 indica que não há autocorrelação nos resíduos, o que é o ideal, pois sugere que os erros entre as observações são independentes um do outro..
+
+15. Omnibus/Prob(Omnibus): Testa a normalidade dos resíduos. Com Prob(Omnibus) próximo de zero, há evidência de que os resíduos podem não ser normalmente distribuídos.
+
+16. Jarque-Bera (JB)/Prob(JB), Skew, Kurtosis: São testes adicionais para a normalidade dos resíduos e sua forma.
+
+Cada um desses elementos ajuda a interpretar a qualidade e a validade do modelo de regressão estimado. É raro conseguir consenso entre todas as estatísticas.
