@@ -40,7 +40,7 @@ Each model was carefully evaluated using key metrics such as the **p-value**, es
 
 In this project, we found that multicollinearity is a serious issue, as it can significantly compromise the quality and reliability of statistical models and introduce bias. To mitigate this risk, we applied the **Variance Inflation Factor (VIF)** to identify and remove highly correlated variables.
 
-Through rigorous statistical analyses—including Pearson correlation, p-value evaluation, and multiple linear regressions—we clearly identified the most relevant factors influencing housing occupancy rates: `**average number of rooms per residence**`, `**crime rate**`, `**presence of a river in the neighborhood**`, `**pollution rate**`, `**distance to the city center**`, `**teacher rate**` and `**homelessness rate**`.
+Through rigorous statistical analyses—including Pearson correlation, p-value evaluation, and multiple linear regressions—we clearly identified the most relevant factors influencing housing occupancy rates: `average number of rooms per residence`, `crime rate`, `presence of a river in the neighborhood`, `pollution rate`, `distance to the city center`, `teacher rate` and `homelessness rate`.
 
 These variables are key determinants of housing occupancy and can support public decision-making in infrastructure and security planning, as well as guide private investors in strategic location assessments. Finally, based on the most relevant variables, we developed an interactive dashboard in Power BI, using PowerQuery for efficient data processing and DAX for building clear and objective metrics—delivering a robust analytical tool for strategic decision-making.
 
